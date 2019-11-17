@@ -49,6 +49,7 @@
 		4F0191632381289B003D14B8 /* Harver iOS ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harver iOS ExerciseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0191672381289B003D14B8 /* Harver_iOS_ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harver_iOS_ExerciseUITests.swift; sourceTree = "<group>"; };
 		4F0191692381289B003D14B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7B026923814D0600100ABD /* Harver iOS Exercise.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Harver iOS Exercise.playground"; path = "../Harver iOS Exercise.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		4F01913923812893003D14B8 = {
 			isa = PBXGroup;
 			children = (
+				4F7B026923814D0600100ABD /* Harver iOS Exercise.playground */,
 				4F01914423812894003D14B8 /* Harver iOS Exercise */,
 				4F01915B2381289B003D14B8 /* Harver iOS ExerciseTests */,
 				4F0191662381289B003D14B8 /* Harver iOS ExerciseUITests */,
