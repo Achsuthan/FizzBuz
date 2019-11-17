@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         
         
         print("\nQ4 Answer = > \n")
-        let myGroup2 = DispatchGroup()
+        let myGroup = DispatchGroup()
         for i in 1...100 {
             var randomString = ""
             if(i%15 == 0){
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
                 randomString = "Fizz"
             }
             else {
-                myGroup2.enter()
+                myGroup.enter()
                 getRandomWord(slow: true) { (word, error) in
                     if let val = word{
                         randomString = val
@@ -74,10 +74,10 @@ class ViewController: UIViewController {
                     else {
                         randomString = "It shouldn't break anything!"
                     }
-                    myGroup2.leave()
+                    myGroup.leave()
                 }
             }
-            myGroup2.notify(queue: .main) {
+            myGroup.notify(queue: .main) {
                 do {
                     
                     if let fileHandle = FileHandle(forWritingAtPath: filename.path) {
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
             }
         }
         
-        myGroup2.notify(queue: .main) {
+        myGroup.notify(queue: .main) {
             
             do {
                 let contents = try String(contentsOf: filename, encoding: String.Encoding.utf8)
